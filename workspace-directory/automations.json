@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "automations": {
+    "LabelAdd": [
+      {
+        "name": "Urgent Triage",
+        "matcher": "^urgent$",
+        "actions": [
+          {
+            "type": "prompt",
+            "prompt": "The urgent label was added to this session. Quickly assess what is being worked on and summarise what needs immediate attention. If a workflow ID or URL is mentioned, check its status and recent executions."
+          }
+        ]
+      }
+    ],
+    "SessionStatusChange": [
+      {
+        "name": "Testing Checklist",
+        "matcher": "^testing$",
+        "actions": [
+          {
+            "type": "prompt",
+            "prompt": "This session moved to Testing status. If a workflow was built or modified in this session, run validation on it and check recent executions for errors. Summarise readiness."
+          }
+        ]
+      }
+    ]
+  }
+}

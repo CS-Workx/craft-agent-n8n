@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "labels": [
+    {
+      "id": "task-type",
+      "name": "Task Type",
+      "color": { "light": "#3B82F6", "dark": "#60A5FA" },
+      "children": [
+        { "id": "build", "name": "Build", "color": { "light": "#2563EB", "dark": "#3B82F6" } },
+        { "id": "debug", "name": "Debug", "color": { "light": "#1D4ED8", "dark": "#60A5FA" } },
+        { "id": "template", "name": "Template", "color": { "light": "#3B82F6", "dark": "#93C5FD" } },
+        { "id": "optimize", "name": "Optimize", "color": { "light": "#0284C7", "dark": "#38BDF8" } }
+      ]
+    },
+    {
+      "id": "node-category",
+      "name": "Node Category",
+      "color": { "light": "#8B5CF6", "dark": "#A78BFA" },
+      "children": [
+        { "id": "trigger", "name": "Trigger", "color": { "light": "#7C3AED", "dark": "#A78BFA" } },
+        { "id": "integration", "name": "Integration", "color": { "light": "#6D28D9", "dark": "#C4B5FD" } },
+        { "id": "ai-nodes", "name": "AI", "color": { "light": "#9333EA", "dark": "#C084FC" } },
+        { "id": "logic", "name": "Logic", "color": { "light": "#A855F7", "dark": "#D8B4FE" } },
+        { "id": "code", "name": "Code", "color": { "light": "#7E22CE", "dark": "#E9D5FF" } }
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "color": { "light": "#10B981", "dark": "#34D399" },
+      "children": [
+        { "id": "production", "name": "Production", "color": { "light": "#059669", "dark": "#34D399" } },
+        { "id": "development", "name": "Development", "color": { "light": "#10B981", "dark": "#6EE7B7" } }
+      ]
+    },
+    {
+      "id": "priority",
+      "name": "Priority",
+      "color": { "light": "#F59E0B", "dark": "#FBBF24" },
+      "valueType": "number"
+    },
+    {
+      "id": "urgent",
+      "name": "Urgent",
+      "color": "destructive"
+    },
+    {
+      "id": "workflow-id",
+      "name": "Workflow",
+      "color": { "light": "#EA580C", "dark": "#FB923C" },
+      "valueType": "string",
+      "autoRules": [
+        {
+          "pattern": "{{N8N_DOMAIN}}/workflow/([a-zA-Z0-9]+)",
+          "valueTemplate": "$1",
+          "description": "Extracts workflow ID from n8n URLs"
+        },
+        {
+          "pattern": "workflow[\\s#:]+([a-zA-Z0-9]{10,})",
+          "valueTemplate": "$1",
+          "flags": "gi",
+          "description": "Matches workflow ID references like 'workflow #abc123...'"
+        }
+      ]
+    },
+    {
+      "id": "n8n-url",
+      "name": "n8n Link",
+      "color": { "light": "#DC2626", "dark": "#F87171" },
+      "valueType": "string",
+      "autoRules": [
+        {
+          "pattern": "(https?://{{N8N_DOMAIN}}/workflow/[a-zA-Z0-9]+)",
+          "valueTemplate": "$1",
+          "description": "Captures full n8n workflow URLs"
+        }
+      ]
+    }
+  ]
+}

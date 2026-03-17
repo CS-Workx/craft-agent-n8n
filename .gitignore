@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sessions (user-specific runtime data)
+sessions/
+
+# Event logs
+events.jsonl
+
+# Plugin state
+.claude-plugin/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Credentials and secrets
+*.key
+*.pem
+credentials.json
+secrets.json

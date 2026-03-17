@@ -1,0 +1,24 @@
+{
+  "name": "n8n",
+  "slug": "n8n",
+  "defaults": {
+    "permissionMode": "allow-all",
+    "cyclablePermissionModes": [
+      "safe",
+      "allow-all"
+    ],
+    "enabledSourceSlugs": [
+      "context7",
+      "memory",
+      "n8n",
+      "n8n-mcp",
+      "sequential-thinking",
+      "perplexity"
+    ],
+    "workingDirectory": "~/path/to/your/n8n-project",
+    "colorTheme": "n8n"
+  },
+  "localMcpServers": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "statuses": [
+    {
+      "id": "backlog",
+      "label": "Backlog",
+      "category": "open",
+      "isFixed": false,
+      "isDefault": true,
+      "order": 0
+    },
+    {
+      "id": "todo",
+      "label": "Todo",
+      "category": "open",
+      "isFixed": true,
+      "isDefault": false,
+      "order": 1
+    },
+    {
+      "id": "in-progress",
+      "label": "In Progress",
+      "color": { "light": "#F59E0B", "dark": "#FBBF24" },
+      "category": "open",
+      "isFixed": false,
+      "isDefault": false,
+      "order": 2
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "color": { "light": "#8B5CF6", "dark": "#A78BFA" },
+      "category": "open",
+      "isFixed": false,
+      "isDefault": false,
+      "order": 3
+    },
+    {
+      "id": "needs-review",
+      "label": "Needs Review",
+      "color": "info",
+      "category": "open",
+      "isFixed": false,
+      "isDefault": true,
+      "order": 4
+    },
+    {
+      "id": "done",
+      "label": "Done",
+      "category": "closed",
+      "isFixed": true,
+      "isDefault": false,
+      "order": 5
+    },
+    {
+      "id": "cancelled",
+      "label": "Cancelled",
+      "category": "closed",
+      "isFixed": true,
+      "isDefault": false,
+      "order": 6
+    }
+  ],
+  "defaultStatusId": "todo"
+}
