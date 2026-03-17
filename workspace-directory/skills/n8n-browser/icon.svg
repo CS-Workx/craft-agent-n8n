@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Browser window -->
+  <rect x="4" y="8" width="56" height="48" rx="4" fill="#1a1a2e" stroke="#ff6d5a" stroke-width="2"/>
+  <!-- Title bar -->
+  <rect x="4" y="8" width="56" height="12" rx="4" fill="#ff6d5a"/>
+  <rect x="4" y="16" width="56" height="4" fill="#ff6d5a"/>
+  <!-- Window dots -->
+  <circle cx="14" cy="14" r="2" fill="#1a1a2e"/>
+  <circle cx="22" cy="14" r="2" fill="#1a1a2e"/>
+  <circle cx="30" cy="14" r="2" fill="#1a1a2e"/>
+  <!-- Workflow nodes inside browser -->
+  <circle cx="18" cy="38" r="5" fill="#ff6d5a" opacity="0.9"/>
+  <circle cx="36" cy="30" r="5" fill="#ff6d5a" opacity="0.7"/>
+  <circle cx="36" cy="46" r="5" fill="#ff6d5a" opacity="0.7"/>
+  <circle cx="52" cy="38" r="5" fill="#ff6d5a" opacity="0.9"/>
+  <!-- Connection lines -->
+  <line x1="23" y1="36" x2="31" y2="31" stroke="#ff6d5a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="23" y1="40" x2="31" y2="45" stroke="#ff6d5a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="41" y1="31" x2="47" y2="36" stroke="#ff6d5a" stroke-width="1.5" opacity="0.5"/>
+  <line x1="41" y1="45" x2="47" y2="40" stroke="#ff6d5a" stroke-width="1.5" opacity="0.5"/>
+</svg>
