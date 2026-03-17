@@ -1,0 +1,7 @@
+{
+  "allowedMcpPatterns": [
+    { "pattern": "search", "comment": "Allow searching the knowledge graph" },
+    { "pattern": "open", "comment": "Allow reading specific entities" },
+    { "pattern": "read", "comment": "Allow reading the graph" }
+  ]
+}

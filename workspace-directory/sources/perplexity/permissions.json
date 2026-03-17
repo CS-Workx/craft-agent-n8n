@@ -1,0 +1,5 @@
+{
+  "allowedMcpPatterns": [
+    { "pattern": ".*", "comment": "All tools are read-only search operations" }
+  ]
+}

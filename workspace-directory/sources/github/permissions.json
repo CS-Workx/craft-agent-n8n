@@ -1,0 +1,7 @@
+{
+  "allowedMcpPatterns": [
+    { "pattern": "list", "comment": "List repos, issues, PRs, branches" },
+    { "pattern": "get", "comment": "Get details of specific resources" },
+    { "pattern": "search", "comment": "Search code, issues, repos" }
+  ]
+}

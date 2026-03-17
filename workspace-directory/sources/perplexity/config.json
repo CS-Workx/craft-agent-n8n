@@ -1,0 +1,23 @@
+{
+  "name": "Perplexity Search",
+  "slug": "perplexity",
+  "enabled": true,
+  "provider": "perplexity",
+  "type": "mcp",
+  "icon": "🔍",
+  "tagline": "Real-time web search powered by Perplexity's Sonar models with cited results",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@perplexity-ai/mcp-server"
+    ],
+    "env": {
+      "PERPLEXITY_API_KEY": "{{PERPLEXITY_API_KEY}}"
+    },
+    "authType": "none"
+  },
+  "connectionStatus": "needs_auth",
+  "isAuthenticated": false
+}

@@ -1,0 +1,9 @@
+{
+  "allowedMcpPatterns": [
+    { "pattern": "search", "comment": "search_nodes, search_templates" },
+    { "pattern": "get", "comment": "get_node, get_template" },
+    { "pattern": "validate", "comment": "validate_node, validate_workflow" },
+    { "pattern": "documentation", "comment": "tools_documentation" },
+    { "pattern": "list", "comment": "List operations" }
+  ]
+}

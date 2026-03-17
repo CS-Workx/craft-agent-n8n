@@ -1,0 +1,20 @@
+{
+  "name": "n8n",
+  "slug": "n8n",
+  "enabled": true,
+  "provider": "n8n",
+  "type": "api",
+  "icon": "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png",
+  "tagline": "Workflow automation - manage workflows, executions, and credentials on your n8n instance",
+  "api": {
+    "baseUrl": "https://{{N8N_DOMAIN}}/api/v1/",
+    "authType": "header",
+    "headerName": "X-N8N-API-KEY",
+    "testEndpoint": {
+      "method": "GET",
+      "path": "workflows?limit=1"
+    }
+  },
+  "connectionStatus": "needs_auth",
+  "isAuthenticated": false
+}

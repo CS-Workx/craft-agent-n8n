@@ -1,0 +1,10 @@
+{
+  "allowedApiEndpoints": [
+    { "method": "GET", "path": ".*", "comment": "All GET requests are read-only" },
+    { "method": "POST", "path": "^workflows$", "comment": "Create workflows" },
+    { "method": "PUT", "path": "^workflows/", "comment": "Update workflows" },
+    { "method": "POST", "path": "^workflows/.+/activate$", "comment": "Activate workflows" },
+    { "method": "POST", "path": "^workflows/.+/deactivate$", "comment": "Deactivate workflows" },
+    { "method": "DELETE", "path": "^workflows/", "comment": "Delete workflows" }
+  ]
+}

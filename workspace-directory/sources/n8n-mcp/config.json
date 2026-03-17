@@ -1,0 +1,22 @@
+{
+  "name": "n8n MCP",
+  "slug": "n8n-mcp",
+  "enabled": true,
+  "provider": "n8n",
+  "type": "mcp",
+  "icon": "https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png",
+  "tagline": "Node documentation, templates, and workflow validation for 1,084 n8n nodes",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "n8n-mcp"],
+    "env": {
+      "MCP_MODE": "stdio",
+      "LOG_LEVEL": "error",
+      "DISABLE_CONSOLE_OUTPUT": "true",
+      "N8N_API_URL": "https://{{N8N_DOMAIN}}",
+      "N8N_API_KEY": "{{N8N_API_KEY}}"
+    },
+    "authType": "none"
+  }
+}

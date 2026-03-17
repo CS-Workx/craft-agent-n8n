@@ -1,0 +1,16 @@
+{
+  "name": "Context7",
+  "slug": "context7",
+  "enabled": true,
+  "provider": "context7",
+  "type": "mcp",
+  "icon": "📚",
+  "tagline": "Up-to-date, version-specific library documentation fetched directly into context",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "@upstash/context7-mcp"],
+    "authType": "none"
+  },
+  "connectionStatus": "untested"
+}

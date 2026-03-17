@@ -1,0 +1,16 @@
+{
+  "name": "Memory",
+  "slug": "memory",
+  "enabled": true,
+  "provider": "memory",
+  "type": "mcp",
+  "icon": "https://cdn.simpleicons.org/databricks",
+  "tagline": "Persistent knowledge graph for remembering project context, decisions, and patterns across sessions",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-memory"],
+    "authType": "none"
+  },
+  "connectionStatus": "untested"
+}

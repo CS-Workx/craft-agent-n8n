@@ -1,0 +1,15 @@
+{
+  "name": "GitHub",
+  "slug": "github",
+  "enabled": true,
+  "provider": "github",
+  "type": "mcp",
+  "icon": "https://github.githubassets.com/favicons/favicon-dark.svg",
+  "tagline": "Full access to GitHub repos, PRs, issues, code search, and diffs",
+  "mcp": {
+    "url": "https://api.githubcopilot.com/mcp/",
+    "authType": "bearer"
+  },
+  "connectionStatus": "needs_auth",
+  "isAuthenticated": false
+}

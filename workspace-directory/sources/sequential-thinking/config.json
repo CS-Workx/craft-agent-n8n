@@ -1,0 +1,16 @@
+{
+  "name": "Sequential Thinking",
+  "slug": "sequential-thinking",
+  "enabled": true,
+  "provider": "sequential-thinking",
+  "type": "mcp",
+  "icon": "🧠",
+  "tagline": "Structured step-by-step reasoning for complex problems, architecture decisions, and debugging",
+  "mcp": {
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+    "authType": "none"
+  },
+  "connectionStatus": "untested"
+}
